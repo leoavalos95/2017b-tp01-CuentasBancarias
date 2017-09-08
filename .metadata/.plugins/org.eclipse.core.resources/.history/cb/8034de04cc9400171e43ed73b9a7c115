@@ -1,0 +1,10 @@
+package cuentaBancaria;
+
+public class Cuenta {
+
+	public Object getSaldo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

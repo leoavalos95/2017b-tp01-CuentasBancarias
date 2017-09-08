@@ -11,5 +11,11 @@ public class TestCuenta {
 		Cuenta cuenta = new Cuenta();
 		assertEquals(cuenta.getSaldo(), 0, 0.1);
 	}
+	
+	@Test
+	public void verEstadoInicial(){
+		Cuenta cuenta = new Cuenta();
+		assertEquals(cuenta.getEstado(), "Activo");
+	}
 
 }
