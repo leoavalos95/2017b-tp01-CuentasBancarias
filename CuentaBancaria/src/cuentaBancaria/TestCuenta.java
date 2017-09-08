@@ -9,7 +9,7 @@ public class TestCuenta {
 	@Test
 	public void verSaldoInicial() {
 		Cuenta cuenta = new Cuenta();
-		assertEquals(cuenta.getSaldo(), 0);
+		assertEquals(cuenta.getSaldo(), 0, 0.1);
 	}
 
 }
