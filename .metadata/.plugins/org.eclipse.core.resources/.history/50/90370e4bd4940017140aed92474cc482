@@ -28,14 +28,13 @@ public class TestCuenta {
 		assertEquals(cuentaDestino.getSaldo(), monto, 0.1);
 	}
 	
-	@Test
 	public void verSiPuedoTransferirSaldoSuficiente(){
-		Cuenta cuentaOrigen = new Cuenta();
+		Cuenta cuentaOrigen = new Cuenta(100);
 		Cuenta cuentaDestino = new Cuenta();
 		double monto = 50;
-		if(cuentaOrigen.extraer(monto))
-			cuentaOrigen.transferirMontoHacia(monto, cuentaDestino);
-		assertEquals(cuentaOrigen.getSaldo(), 0, 0.1);
+		cuentaOrigen.extraer(monto);
+		cuentaOrigen.transferirMontoHacia(monto, cuentaDestino);
+		assertEquals(cuentaDestino.getSaldo(), monto, 0.1);
 	}
 
 }

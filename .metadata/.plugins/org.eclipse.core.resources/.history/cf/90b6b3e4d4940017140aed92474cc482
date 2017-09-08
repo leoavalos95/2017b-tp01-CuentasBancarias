@@ -21,7 +21,7 @@ public class Cuenta {
 	}
 
 	public void extraer(double monto) {
-		this.saldo -= monto;
+		saldo -= monto;
 	}
 
 	public void transferirMontoHacia(double monto, Cuenta cuentaDestino) {
