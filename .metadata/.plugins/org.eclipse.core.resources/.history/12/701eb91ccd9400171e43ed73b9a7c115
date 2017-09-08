@@ -4,11 +4,6 @@ public class Cuenta {
 	
 	private double saldo;
 	private String estado;
-	
-	public Cuenta(){
-		saldo = 0;
-		estado = "Activo";
-	}
 
 	public double getSaldo() {
 		// TODO Auto-generated method stub
