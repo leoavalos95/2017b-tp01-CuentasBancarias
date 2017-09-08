@@ -17,13 +17,5 @@ public class TestCuenta {
 		Cuenta cuenta = new Cuenta();
 		assertEquals(cuenta.getEstado(), "Activo");
 	}
-	
-	@Test
-	public void verSiPuedoTransferir(){
-		Cuenta cuentaOrigen = new Cuenta();
-		Cuenta cuentaDestino = new Cuenta();
-		int monto = 50;
-		assertEquals(cuentaOrigen.transferirMontoHacia(monto, cuentaDestino),true);
-	}
 
 }
