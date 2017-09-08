@@ -20,4 +20,12 @@ public class Cuenta {
 		return estado;
 	}
 
+	public void extraer(double monto) {
+		saldo -= monto;
+	}
+
+	public void transferirMontoHacia(double monto, Cuenta cuentaDestino) {
+		cuentaDestino.saldo += monto;
+	}
+
 }

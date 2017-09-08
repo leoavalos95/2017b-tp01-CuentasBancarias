@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCuenta" project="CuentaBancaria" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="cuentaBancaria.TestCuenta" time="0.0">
-    <testcase name="verSaldoInicial" classname="cuentaBancaria.TestCuenta" time="0.0"/>
-    <testcase name="verEstadoInicial" classname="cuentaBancaria.TestCuenta" time="0.0"/>
-  </testsuite>
-</testrun>

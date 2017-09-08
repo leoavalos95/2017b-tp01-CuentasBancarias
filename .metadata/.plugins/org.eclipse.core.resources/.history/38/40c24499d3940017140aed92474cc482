@@ -1,0 +1,23 @@
+package cuentaBancaria;
+
+public class Cuenta {
+	
+	private double saldo;
+	private String estado;
+	
+	public Cuenta(){
+		saldo = 0;
+		estado = "Activo";
+	}
+
+	public double getSaldo() {
+		// TODO Auto-generated method stub
+		return saldo;
+	}
+
+	public String getEstado() {
+		// TODO Auto-generated method stub
+		return estado;
+	}
+
+}

@@ -22,8 +22,10 @@ public class TestCuenta {
 	public void verSiPuedoTransferir(){
 		Cuenta cuentaOrigen = new Cuenta();
 		Cuenta cuentaDestino = new Cuenta();
-		int monto = 50;
-		assertEquals(cuentaOrigen.transferirMontoHacia(monto, cuentaDestino),true);
+		double monto = 50;
+		cuentaOrigen.extraer(monto);
+		cuentaOrigen.transferirMontoHacia(monto, cuentaDestino);
+		assertEquals(cuentaDestino.getSaldo(), monto, 0.1);
 	}
 
 }

@@ -1,0 +1,31 @@
+package cuentaBancaria;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestCuenta {
+
+	@Test
+	public void verSaldoInicial() {
+		Cuenta cuenta = new Cuenta();
+		assertEquals(cuenta.getSaldo(), 0, 0.1);
+	}
+
+	@Test
+	public void verEstadoInicial() {
+		Cuenta cuenta = new Cuenta();
+		assertEquals(cuenta.getEstado(), "Activo");
+	}
+
+	@Test
+	public void verSiPuedoTransferir() {
+		Cuenta cuentaOrigen = new Cuenta(100);
+		Cuenta cuentaDestino = new Cuenta();
+		int monto = 50;
+		cuentaOrigen.extraer(monto);
+			assertEquals(cuentaOrigen.transferirMontoHacia(monto, 
+					 cuentaDestino), true);
+	}
+
+}
