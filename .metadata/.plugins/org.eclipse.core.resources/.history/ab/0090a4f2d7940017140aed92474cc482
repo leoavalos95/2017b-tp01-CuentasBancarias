@@ -10,11 +10,6 @@ public class Cuenta {
 		estado = "Activo";
 	}
 
-	public Cuenta(String estado, double saldo) {
-		this.saldo = saldo;
-		this.estado = estado;
-	}
-
 	public double getSaldo() {
 		// TODO Auto-generated method stub
 		return saldo;
@@ -27,7 +22,7 @@ public class Cuenta {
 
 	public boolean extraer(double monto) {
 
-		if (saldo >= monto && estado == "Activo") {
+		if (saldo >= monto) {
 			saldo -= monto;
 			return true;
 		}

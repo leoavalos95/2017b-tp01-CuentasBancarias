@@ -27,7 +27,7 @@ public class Cuenta {
 
 	public boolean extraer(double monto) {
 
-		if (saldo >= monto && estado == "Activo") {
+		if (saldo >= monto) {
 			saldo -= monto;
 			return true;
 		}
