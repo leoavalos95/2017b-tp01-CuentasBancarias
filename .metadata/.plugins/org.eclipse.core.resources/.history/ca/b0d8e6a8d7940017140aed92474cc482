@@ -40,12 +40,12 @@ public class TestCuenta {
 	
 	@Test
 	public void verSiPuedeTransferirCuentaInactiva(){
-		Cuenta cuentaOrigen = new Cuenta("Inactiva",100);
+		Cuenta cuentaOrigen = new Cuenta("Inactiva");
 		Cuenta cuentaDestino = new Cuenta();
 		double monto = 50;
 		if(cuentaOrigen.extraer(monto))
 			cuentaOrigen.transferirMontoHacia(monto, cuentaDestino);
-		assertEquals(cuentaOrigen.getSaldo(), 100, 0.1);
+		assertEquals(cuentaOrigen.getSaldo(), 0, 0.1);
 	}
 	
 	
