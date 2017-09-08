@@ -20,14 +20,8 @@ public class Cuenta {
 		return estado;
 	}
 
-	public boolean extraer(double monto) {
-
-		if (saldo >= monto) {
-			saldo -= monto;
-			return true;
-		}
-		return false;
-
+	public void extraer(double monto) {
+		this.saldo -= monto;
 	}
 
 	public void transferirMontoHacia(double monto, Cuenta cuentaDestino) {
