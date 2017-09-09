@@ -64,13 +64,5 @@ public class TestCuenta {
 		cuenta.depositar(100);
 		assertEquals(cuenta.getSaldo(),100, 0.1);
 	}
-	
-	@Test
-	public void verSiPuedoDepositarEnCuentaInactiva(){
-		Cuenta cuenta = new Cuenta("Inactiva", 0);
-		cuenta.depositar(100);
-		assertEquals(cuenta.getSaldo(), 0, 0.1);
-	}
-	
-}
 
+}
