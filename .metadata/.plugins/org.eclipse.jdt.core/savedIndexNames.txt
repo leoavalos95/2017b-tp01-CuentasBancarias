@@ -3,7 +3,6 @@ INDEX VERSION 1.130+C:\Users\Leonel\workspace\2017b-tp01-CuentasBancarias\.metad
 197789008.index
 134360950.index
 3449055620.index
-1881475489.index
 4005617011.index
 189530877.index
 1654674800.index

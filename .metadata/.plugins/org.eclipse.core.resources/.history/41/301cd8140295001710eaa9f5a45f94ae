@@ -39,8 +39,4 @@ public class Cuenta {
 		cuentaDestino.saldo += monto;
 	}
 
-	public void depositar(double monto) {
-		saldo += monto;
-	}
-
 }
