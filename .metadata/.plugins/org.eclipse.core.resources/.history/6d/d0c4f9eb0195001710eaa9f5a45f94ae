@@ -58,11 +58,6 @@ public class TestCuenta {
 		assertEquals(cuentaDestino.getSaldo(),0, 0.1);
 	}
 	
-	@Test
-	public void verSiPuedoDepositar(){
-		Cuenta cuenta = new Cuenta();
-		cuenta.depositar(100);
-		assertEquals(cuenta.getSaldo(),100, 0.1);
-	}
+	
 
 }
