@@ -40,7 +40,7 @@ public class Cuenta {
 	}
 
 	public void depositar(double monto) {
-		if(estado == "Activo" && monto >= 0)
+		if(estado == "Activo")
 			saldo += monto;
 	}
 
