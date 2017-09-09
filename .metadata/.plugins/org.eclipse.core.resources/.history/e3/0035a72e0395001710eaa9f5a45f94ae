@@ -72,11 +72,5 @@ public class TestCuenta {
 		assertEquals(cuenta.getSaldo(), 0, 0.1);
 	}
 	
-	@Test
-	public void verSiPuedoDepositarMontoNegativo(){
-		Cuenta cuenta = new Cuenta();
-		cuenta.depositar(-200);
-		assertEquals(cuenta.getSaldo(), 0, 0.1);
-	}
 }
 
