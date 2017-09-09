@@ -48,16 +48,6 @@ public class TestCuenta {
 		assertEquals(cuentaOrigen.getSaldo(), 100, 0.1);
 	}
 	
-	@Test
-	public void verSiPuedoTransferirSaldoNegativo(){
-		Cuenta cuentaOrigen = new Cuenta();
-		Cuenta cuentaDestino = new Cuenta();
-		double monto = -50;
-		if(cuentaOrigen.extraer(monto))
-			cuentaOrigen.transferirMontoHacia(monto, cuentaDestino);
-		assertEquals(cuentaDestino.getSaldo(),0, 0.1);
-	}
-	
 	
 
 }
