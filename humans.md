@@ -7,5 +7,5 @@
 
 ## Estudiantes
 
-* XXX ([xxx](https://github.com/xxx))
-* XXX ([xxx](https://github.com/xxx))
+* Leonel Avalos ([leoavalos95](https://github.com/leoavalos95))
+* Ezequiel Corno ([EzequielCorno](https://github.com/EzequielCorno))
